@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px);
+}
+
+.section {
+    background: white;
+    padding: 20px 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: var(--margin-default);
+}
+
+/* ATOMIC CSS CLASSES*/
+
+.input-large {
+    width: 100%;
+    font-size: var(--font-size-large);
+    padding: var(--padding-input);                  
+    margin: var(--margin-default);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+.user-icon {
+    position: absolute;
+    left: 21px;
+    color: #ccc;
+}
+
+
+.input-large:focus {
+    border-color: var(--focus-color);
+    outline: none;
+}
+
+.button-primary {
+    padding: var(--padding-large);                                                                             
+    font-size: var(--font-size-large);                  /*  TRY --padding-small or medium */
+    margin: var(--margin-default);
+    background-color: var(--primary-color);             /* button background color */
+    color:var(--white-color);                           /* color of text inside button*/
+    border-radius: var(--border-radius);
+    border:var(--border-none);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.button-primary:disabled {
+    background-color: var(--loading-color);
+    cursor: not-allowed;
+}
+
+.button-primary .loading-icon,
+.button-primary .search-icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.button-primary .loading-icon {
+    display: none;
+    width: 20.5px;
+    height: 20.5px;
+    border: 2px solid #fff;
+    border-top: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.button-primary.loading .loading-icon {
+    display: inline-block;
+   
+}
+
+.button-primary.loading .search-icon {
+    display: none;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

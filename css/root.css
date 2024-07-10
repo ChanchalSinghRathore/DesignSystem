@@ -1,0 +1,57 @@
+:root {
+    /* PRIMARY COLORS */
+    --primary-color: #0066FF;
+    --hover-color: #3385FF;
+    --focus-color: #096dd9;
+    --loading-color: #005CE5;
+    --white-color:#FFFFFF;
+    --black-color:#000000;
+
+    /* DARK COLOR */
+    --primary-dark:#272937;
+    --secordary-dark:rgba(39, 55 , 42, 0.75);
+    --terteriary-dark:rgba(39, 55 , 42, 0.35);
+    --quaternary-dark:rgba(39, 55 , 42, 0.12);
+    --backrgound-dark:rgba(39, 55 , 42, 0.5);
+
+    /* LIGHT COLOR */
+    --primary-light:#FFFF;
+    --secordary-light:rgba(255, 255 , 255, 0.93);
+    --terteriary-light:rgba(255, 255 , 255, 0.65);
+    --quaternary-light:rgba(255, 255 , 255, 0.35);
+    --backrgound-light:rgba(255, 255 , 255, 0.2);
+
+    /* SPECIAL COLORS */
+    --info-color:#3385FF;
+    --success-color:#48B527;
+    --warning-color:#FFB649;
+    --danger-color:#FF3A30;
+
+    /* FONT SIZE */
+    --font-size-large: 18px;
+    --font-size-medium: 15px;
+    --font-size-small: 12px;   
+
+    /* PADDING */
+    --padding-input:8px 12px;
+    --padding-large: 8px 16px ;
+    --padding-medium: 5px 16px;
+    --padding-small: 1px 8px;
+    --margin-default: 10px;
+
+    /* BORDER */
+    --border-radius: 4px;
+    --border-color:#ccc;
+    --border-solid: 2px solid #0066FF;
+    --border-dotted:2px dotted #0066FF;
+    --border-none: none;
+
+    /* OPACITY */
+    --primary-color-opacity-05: rgba(0, 102, 255, 0.5);
+    --primary-color-opacity-03: rgba(0, 102, 255, 0.3);
+    --primary-color-opacity-01: rgba(0, 102, 255, 0.1);
+    
+     
+}
+
+
